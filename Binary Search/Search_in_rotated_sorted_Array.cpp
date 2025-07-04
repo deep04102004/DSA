@@ -9,7 +9,7 @@ int findpivot(vector<int>arr,int n){
     while(s<e){
         int mid=s+(e-s)/2;
 
-        if(arr[mid]>=arr[0]){
+        if(arr[mid]>arr[e]){
             s=mid+1;
         }
 
@@ -57,7 +57,7 @@ int findPosition(vector<int>arr,int target){
 }
 
 int main(){
-    vector<int>arr={3,1};
+    vector<int>arr={3,4,1,2,};
     int target=1;
 
     cout<<findPosition(arr,target);
