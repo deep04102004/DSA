@@ -38,7 +38,7 @@ vector<int> asciirange(string& s) {
     return result;
 }
 
-// 🔽 Driver code to test
+
 int main() {
     string s = "abcbad";
     vector<int> res = asciirange(s);
